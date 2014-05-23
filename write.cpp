@@ -42,9 +42,16 @@ bool store::write(){
   return result
 }
 
+void ranInp(){
+  std::string someting;
+  getline(std::cin,something);
+  std::cout << "this is what you wrote\n" << someting << std::endl; 
+}
+
 void write(){
   store stuff;
   std::cout << "write something " << std::endl;
+  ranInp();
   stuff.inputStuff();
   
   std::cout << "whats your name" << std::endl;
