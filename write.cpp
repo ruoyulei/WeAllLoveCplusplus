@@ -61,4 +61,6 @@ int main(){
   write();
 }
 
+//these are just comments
 #define std::inString "This is a Mule ->"
+//they are not important
