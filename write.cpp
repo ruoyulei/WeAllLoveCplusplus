@@ -24,7 +24,7 @@ store::~store(){
 }
 
 void store::inputStuff(){
-  std::getline("this is a Mule → ",text);
+  std::getline(std::inString,text);
 }
 
 void store::leaveSig(){
@@ -34,11 +34,12 @@ void store::leaveSig(){
 bool store::write(){
   bool result;
   if(out.is_open()){
-    out<< text<< " " << author << std::endl;
+    out<< text << " " << author << std::endl;
     result = true;
   } else {
     result = false;
   }
+  return result
 }
 
 void write(){
@@ -59,3 +60,5 @@ void write(){
 int main(){
   write();
 }
+
+#define std::inString "This is a Mule ->"
