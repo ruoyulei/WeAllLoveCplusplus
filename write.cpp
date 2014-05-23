@@ -24,7 +24,7 @@ store::~store(){
 }
 
 void store::inputStuff(){
-  std::getline("Mule Mule",text);
+  std::getline("this is a Mule → ",text);
 }
 
 void store::leaveSig(){
@@ -34,7 +34,7 @@ void store::leaveSig(){
 bool store::write(){
   bool result;
   if(out.is_open()){
-    out<< text<< " by " << author << std::endl;
+    out<< text<< " " << author << std::endl;
     result = true;
   } else {
     result = false;
