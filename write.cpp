@@ -1,10 +1,3 @@
-/*
-  the function is supposed to write an input and the 
-  name of the author, but there is a small problem
-  identify the problem and fix it (you should only
-  change a sentence).
-*/
-
 #include<iostream>
 #include<fstream>
 
