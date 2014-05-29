@@ -23,11 +23,11 @@ void Fibonacci(){
         printf("%d %d ",termOne,termTwo);
         termOne = termOne+termTwo;
         termTwo = termOne+termTwo;
-        if((termOne & 1) && termOne < 4000000){
+        if(!(termOne & 1) && termOne < 4000000){
             sum += termOne;
             count++;
         }
-        if((termTwo & 1) && termTwo < 4000000){
+        if(!(termTwo & 1) && termTwo < 4000000){
             sum += termTwo;
             count++;
         }
